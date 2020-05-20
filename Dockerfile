@@ -7,6 +7,8 @@ RUN set -eux; \
   apt-get install -y --no-install-recommends \
     build-essential \
     cmake \
+    git \
+    openssh-client \
     pkg-config \
   ; \
   rm -rf /var/lib/apt/lists/*
