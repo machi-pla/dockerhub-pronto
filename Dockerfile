@@ -14,5 +14,5 @@ RUN set -eux; \
   rm -rf /var/lib/apt/lists/*
 
 COPY Gemfile Gemfile.lock /pronto/
-
-RUN bundle install
+RUN bundle install && bundle binstub pronto
+ENV PATH /pronto/bin:$PATH
