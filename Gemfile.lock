@@ -78,6 +78,8 @@ GEM
     pronto-brakeman (0.10.0)
       brakeman (>= 3.2.0)
       pronto (~> 0.10.0)
+    pronto-eslint_npm (0.10.1)
+      pronto (~> 0.10.0)
     pronto-fasterer (0.10.0)
       fasterer (~> 0.3, >= 0.3.0)
       pronto (~> 0.10.0)
@@ -87,6 +89,9 @@ GEM
     pronto-reek (0.10.0)
       pronto (~> 0.10.0)
       reek (>= 4.2, < 6.0)
+    pronto-stylelint (0.10.0)
+      pronto (~> 0.10.0)
+      rugged (~> 0.24, >= 0.23.0)
     psych (3.1.0)
     public_suffix (4.0.5)
     rack (2.2.2)
@@ -153,10 +158,12 @@ PLATFORMS
 DEPENDENCIES
   pronto!
   pronto-brakeman
+  pronto-eslint_npm
   pronto-fasterer
   pronto-rails_best_practices
   pronto-reek
   pronto-rubocop!
+  pronto-stylelint
   rubocop
   rubocop-performance
   rubocop-rails
