@@ -7,10 +7,14 @@ RUN set -eux; \
   apt-get install -y --no-install-recommends \
     build-essential \
     cmake \
+    curl \
     git \
     openssh-client \
     pkg-config \
   ; \
+  curl -sL https://deb.nodesource.com/setup_12.x | bash -; \
+  apt-get update; \
+  apt-get install -y --no-install-recommends nodejs; \
   rm -rf /var/lib/apt/lists/*
 
 COPY Gemfile Gemfile.lock /pronto/
