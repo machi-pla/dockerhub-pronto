@@ -94,7 +94,7 @@ GEM
       rugged (~> 0.24, >= 0.23.0)
     psych (3.1.0)
     public_suffix (4.0.5)
-    rack (2.2.2)
+    rack (2.2.3)
     rails_best_practices (1.20.0)
       activesupport
       code_analyzer (>= 0.5.1)
