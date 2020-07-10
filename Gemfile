@@ -14,7 +14,7 @@ gem "pronto-rails_best_practices", require: false
 gem "pronto-reek", require: false
 gem "pronto-rubocop", require: false, github: "prontolabs/pronto-rubocop"
 gem "pronto-stylelint", require: false
-gem "rubocop"
+gem "rubocop", "0.86"
 gem "rubocop-performance"
 gem "rubocop-rails"
 gem "rubocop-rspec"
