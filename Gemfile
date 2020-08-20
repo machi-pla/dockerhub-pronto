@@ -12,9 +12,6 @@ gem "pronto-eslint_npm", require: false
 gem "pronto-fasterer", require: false
 gem "pronto-rails_best_practices", require: false
 gem "pronto-reek", require: false
-gem "pronto-rubocop", require: false, github: "prontolabs/pronto-rubocop"
+gem "pronto-standardrb", require: false
 gem "pronto-stylelint", require: false
-gem "rubocop", "0.86"
-gem "rubocop-performance"
-gem "rubocop-rails"
-gem "rubocop-rspec"
+gem "standard"
