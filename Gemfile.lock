@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/prontolabs/pronto
-  revision: 24bd06baab2fce47ec82e4e7f5ff0484057f55dd
+  revision: 37b9607d2ced32cd98e8559a49aff266e89f01f9
   specs:
     pronto (0.10.0)
       gitlab (~> 4.4, >= 4.4.0)
@@ -12,7 +12,7 @@ GIT
 
 GIT
   remote: https://github.com/prontolabs/pronto-rubocop
-  revision: 0a2f99f6298a7df585335a60bdb52cc2ea732a37
+  revision: dd3c6126d766cca4d1130416c9cbba82ba052f01
   specs:
     pronto-rubocop (0.10.0)
       pronto (~> 0.10.0)
@@ -21,7 +21,7 @@ GIT
 GEM
   remote: https://rubygems.org/
   specs:
-    activesupport (6.0.3.2)
+    activesupport (6.0.3.3)
       concurrent-ruby (~> 1.0, >= 1.0.2)
       i18n (>= 0.7, < 2)
       minitest (~> 5.1)
@@ -34,7 +34,7 @@ GEM
       descendants_tracker (~> 0.0.4)
       ice_nine (~> 0.11.0)
       thread_safe (~> 0.3, >= 0.3.1)
-    brakeman (4.8.2)
+    brakeman (4.9.1)
     code_analyzer (0.5.2)
       sexp_processor
     codeclimate-engine-rb (0.4.1)
@@ -42,7 +42,7 @@ GEM
     coercible (1.0.0)
       descendants_tracker (~> 0.0.1)
     colorize (0.8.1)
-    concurrent-ruby (1.1.6)
+    concurrent-ruby (1.1.7)
     descendants_tracker (0.0.4)
       thread_safe (~> 0.3, >= 0.3.1)
     equalizer (0.0.11)
@@ -52,13 +52,13 @@ GEM
     fasterer (0.8.3)
       colorize (~> 0.7)
       ruby_parser (>= 3.14.1)
-    gitlab (4.16.0)
+    gitlab (4.16.1)
       httparty (~> 0.14, >= 0.14.0)
       terminal-table (~> 1.5, >= 1.5.1)
     httparty (0.18.1)
       mime-types (~> 3.0)
       multi_xml (>= 0.5.2)
-    i18n (1.8.3)
+    i18n (1.8.5)
       concurrent-ruby (~> 1.0)
     ice_nine (0.11.2)
     json (2.3.1)
@@ -66,7 +66,7 @@ GEM
     mime-types (3.3.1)
       mime-types-data (~> 3.2015)
     mime-types-data (3.2020.0512)
-    minitest (5.14.1)
+    minitest (5.14.2)
     multi_xml (0.6.0)
     multipart-post (2.1.1)
     octokit (4.18.0)
@@ -93,7 +93,7 @@ GEM
       pronto (~> 0.10.0)
       rugged (~> 0.24, >= 0.23.0)
     psych (3.1.0)
-    public_suffix (4.0.5)
+    public_suffix (4.0.6)
     rack (2.2.3)
     rails_best_practices (1.20.0)
       activesupport
@@ -113,19 +113,19 @@ GEM
     regexp_parser (1.7.1)
     require_all (3.0.0)
     rexml (3.2.4)
-    rubocop (0.86.0)
+    rubocop (0.85.1)
       parallel (~> 1.10)
       parser (>= 2.7.0.1)
       rainbow (>= 2.2.2, < 4.0)
       regexp_parser (>= 1.7)
       rexml
-      rubocop-ast (>= 0.0.3, < 1.0)
+      rubocop-ast (>= 0.0.3)
       ruby-progressbar (~> 1.7)
       unicode-display_width (>= 1.4.0, < 2.0)
-    rubocop-ast (0.1.0)
+    rubocop-ast (0.0.3)
       parser (>= 2.7.0.1)
-    rubocop-performance (1.7.0)
-      rubocop (>= 0.82.0)
+    rubocop-performance (1.6.1)
+      rubocop (>= 0.71.0)
     rubocop-rails (2.6.0)
       activesupport (>= 4.2.0)
       rack (>= 1.1)
@@ -133,13 +133,16 @@ GEM
     rubocop-rspec (1.41.0)
       rubocop (>= 0.68.1)
     ruby-progressbar (1.10.1)
-    ruby_parser (3.14.2)
+    ruby_parser (3.15.0)
       sexp_processor (~> 4.9)
     rugged (0.99.0)
     sawyer (0.8.2)
       addressable (>= 2.3.5)
       faraday (> 0.8, < 2.0)
-    sexp_processor (4.15.0)
+    sexp_processor (4.15.1)
+    standard (0.4.7)
+      rubocop (~> 0.85.0)
+      rubocop-performance (~> 1.6.0)
     terminal-table (1.8.0)
       unicode-display_width (~> 1.1, >= 1.1.1)
     thor (1.0.1)
@@ -152,7 +155,7 @@ GEM
       coercible (~> 1.0)
       descendants_tracker (~> 0.0, >= 0.0.3)
       equalizer (~> 0.0, >= 0.0.9)
-    zeitwerk (2.3.1)
+    zeitwerk (2.4.0)
 
 PLATFORMS
   ruby
@@ -166,10 +169,12 @@ DEPENDENCIES
   pronto-reek
   pronto-rubocop!
   pronto-stylelint
-  rubocop (= 0.86)
-  rubocop-performance
-  rubocop-rails
-  rubocop-rspec
+  rubocop (~> 0.85.1)
+  rubocop-ast (~> 0.0.3)
+  rubocop-performance (~> 1.6.1)
+  rubocop-rails (~> 2.6.0)
+  rubocop-rspec (~> 1.41.0)
+  standard (~> 0.4.7)
 
 RUBY VERSION
    ruby 2.7.1p83
