@@ -102,12 +102,12 @@ DEPENDENCIES
   pronto-eslint_npm
   pronto-rubocop
   pronto-stylelint
-  rubocop (>= 0.85.1)
-  rubocop-ast (>= 0.0.3)
-  rubocop-performance (>= 1.6.1)
-  rubocop-rails (>= 2.6.0)
-  rubocop-rspec (>= 1.41.0)
-  standard (>= 0.4.7)
+  rubocop (= 0.93.1)
+  rubocop-ast (= 1.4.1)
+  rubocop-performance (= 1.8.1)
+  rubocop-rails (= 2.9.1)
+  rubocop-rspec (= 1.44.1)
+  standard (= 0.6.1)
 
 RUBY VERSION
    ruby 2.7.2p137

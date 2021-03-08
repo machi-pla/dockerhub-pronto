@@ -11,9 +11,9 @@ gem "pronto-eslint_npm", require: false
 gem "pronto-rubocop", require: false
 gem "pronto-stylelint", require: false
 
-gem "rubocop", ">= 0.85.1"
-gem "rubocop-ast", ">= 0.0.3"
-gem "rubocop-performance", ">= 1.6.1"
-gem "rubocop-rails", ">= 2.6.0"
-gem "rubocop-rspec", ">= 1.41.0"
-gem "standard", ">= 0.4.7"
+gem "rubocop", "0.93.1", require: false
+gem "rubocop-ast", "1.4.1", require: false
+gem "rubocop-performance", "1.8.1", require: false
+gem "rubocop-rails", "2.9.1", require: false
+gem "rubocop-rspec", "1.44.1", require: false
+gem "standard", "0.6.1", require: false
