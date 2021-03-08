@@ -6,9 +6,9 @@ git_source(:github) { |repo_name| "https://github.com/#{repo_name}" }
 
 ruby "2.7.2"
 
-gem "pronto", github: "prontolabs/pronto"
+gem "pronto"
 gem "pronto-eslint_npm", require: false
-gem "pronto-rubocop", require: false, github: "prontolabs/pronto-rubocop"
+gem "pronto-rubocop", require: false
 gem "pronto-stylelint", require: false
 
 # pronto-rubocopがrubocopの更新に追従しきれておらず、rubocop < 0.87.0 の制限が必要。
